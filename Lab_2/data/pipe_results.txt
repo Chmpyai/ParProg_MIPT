@@ -1,0 +1,5 @@
+Pipe-like Benchmark (Threads):
+  Messages: 10000, Size: 4096 B
+  Total time: 73258 us (0.073258 s)
+  Throughput: 533.218 MB/s
+  Avg latency/msg: 7.3258 us

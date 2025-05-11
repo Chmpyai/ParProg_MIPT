@@ -1,0 +1,43 @@
+Integrating sin(1/x) from 0.01 to 2 with 1 threads, epsilon: 1e-08
+THREAD_EVALS: 0 904132
+Load Balancing (Evals): N/A for single thread.
+Integral result: 1.1365499873
+Total function evaluations: 904132
+Time (1 thr): 57.6239000000 ms
+DATAPOINT_INTEGRAL_SINGLE: 57.6239000000 904132
+Integrating sin(1/x) from 0.01 to 2 with 2 threads, epsilon: 1e-08
+THREAD_EVALS: 0 454860
+THREAD_EVALS: 1 449280
+Load Balancing (Evals): Min=449280, Max=454860, Avg=452070.00, Spread=1.23%
+Integral result: 1.1365499873
+Total function evaluations: 904140
+Time (2 thr): 29.8217000000 ms
+DATAPOINT_INTEGRAL_MULTI: 2 29.8217000000 904140
+Integrating sin(1/x) from 0.01 to 2 with 4 threads, epsilon: 1e-08
+THREAD_EVALS: 0 223436
+THREAD_EVALS: 1 222380
+THREAD_EVALS: 2 227976
+THREAD_EVALS: 3 230404
+Load Balancing (Evals): Min=222380, Max=230404, Avg=226049.00, Spread=3.55%
+Integral result: 1.1365499873
+Total function evaluations: 904196
+Time (4 thr): 16.7143000000 ms
+DATAPOINT_INTEGRAL_MULTI: 4 16.7143000000 904196
+Integrating sin(1/x) from 0.01 to 2 with 12 threads, epsilon: 1e-08
+THREAD_EVALS: 0 77944
+THREAD_EVALS: 1 90136
+THREAD_EVALS: 2 84240
+THREAD_EVALS: 3 71956
+THREAD_EVALS: 4 85464
+THREAD_EVALS: 5 75248
+THREAD_EVALS: 6 67732
+THREAD_EVALS: 7 78928
+THREAD_EVALS: 8 77828
+THREAD_EVALS: 9 77484
+THREAD_EVALS: 10 68908
+THREAD_EVALS: 11 60328
+Load Balancing (Evals): Min=60328, Max=90136, Avg=76349.67, Spread=39.04%
+Integral result: 1.1365499873
+Total function evaluations: 916196
+Time (12 thr): 9.5793000000 ms
+DATAPOINT_INTEGRAL_MULTI: 12 9.5793000000 916196

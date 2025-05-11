@@ -1,0 +1,5 @@
+Shared Memory (Threads) Benchmark (Simplified):
+  Round trips: 10000, Data size/transfer: 4096 B
+  Total time: 384369 us
+  Avg latency/round_trip: 38.4369 us
+  Approx Throughput: 203.255 MB/s
