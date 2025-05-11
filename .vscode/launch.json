@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MPI Program",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Lab_1/build/mpi_pi.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Lab_1/build",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "build-mpi"
+        }
+    ]
+} 

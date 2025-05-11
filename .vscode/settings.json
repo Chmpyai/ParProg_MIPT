@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": ["-NoExit", "-Command", "chcp 65001"]
+        }
+    },
+    "files.associations": {
+        "chrono": "cpp"
+    }
+} 
