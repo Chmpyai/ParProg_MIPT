@@ -1,15 +1,17 @@
-// task1_1.cpp
+// Цель: Вычисление числа Пи методом Монте-Карло 
+// с использованием MPI для параллелизации.
 #include <mpi.h>       // MPI
-#include <iostream>    // std::cout, std::cerr
+#include <iostream>    
 #include <random>      // генерация случайных чисел
-#include <chrono>      // измерение времени
-#include <fstream>     // write res to file
-#include <string>      // Для std::string, std::stoll
+#include <chrono>      
+#include <fstream>     // write results to file
+#include <string>      
 
 #ifdef _WIN32
-#include <windows.h>   // Для SetConsoleOutputCP на Windows
+#include <windows.h>   // чисто для win
 #endif
 
+// MAIN
 int main(int argc, char* argv[]) {
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8); // Корректное отображение UTF-8 в Win

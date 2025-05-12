@@ -1,60 +1,60 @@
 Vector size: 100000, Parallel sort threads: 1
-qsort time: 28.7255 ms
-std::sort time: 25.3355 ms
-Parallel sort time (1 threads): 27.8778 ms
-DATAPOINT: 100000 1 28.7255 25.3355 27.8778
+qsort time: 29.4329 ms
+std::sort time: 21.0347 ms
+Parallel sort time (1 threads): 22.7418 ms
+DATAPOINT: 100000 1 29.4329 21.0347 22.7418
 Vector size: 100000, Parallel sort threads: 2
-qsort time: 27.7612 ms
-std::sort time: 21.7992 ms
-Parallel sort time (2 threads): 13.5545 ms
-DATAPOINT: 100000 2 27.7612 21.7992 13.5545
+qsort time: 26.2083 ms
+std::sort time: 20.9883 ms
+Parallel sort time (2 threads): 14.0184 ms
+DATAPOINT: 100000 2 26.2083 20.9883 14.0184
 Vector size: 100000, Parallel sort threads: 4
-qsort time: 25.8406 ms
-std::sort time: 21.236 ms
-Parallel sort time (4 threads): 10.3127 ms
-DATAPOINT: 100000 4 25.8406 21.236 10.3127
+qsort time: 25.8888 ms
+std::sort time: 21.2593 ms
+Parallel sort time (4 threads): 10.0171 ms
+DATAPOINT: 100000 4 25.8888 21.2593 10.0171
 Vector size: 100000, Parallel sort threads: 12
-qsort time: 26.2425 ms
-std::sort time: 21.1596 ms
-Parallel sort time (12 threads): 11.1918 ms
-DATAPOINT: 100000 12 26.2425 21.1596 11.1918
+qsort time: 25.7202 ms
+std::sort time: 21.2992 ms
+Parallel sort time (12 threads): 11.265 ms
+DATAPOINT: 100000 12 25.7202 21.2992 11.265
 Vector size: 500000, Parallel sort threads: 1
-qsort time: 154.768 ms
-std::sort time: 125.852 ms
-Parallel sort time (1 threads): 125.452 ms
-DATAPOINT: 500000 1 154.768 125.852 125.452
+qsort time: 151.124 ms
+std::sort time: 123.038 ms
+Parallel sort time (1 threads): 123.695 ms
+DATAPOINT: 500000 1 151.124 123.038 123.695
 Vector size: 500000, Parallel sort threads: 2
-qsort time: 150.781 ms
-std::sort time: 120.833 ms
-Parallel sort time (2 threads): 67.436 ms
-DATAPOINT: 500000 2 150.781 120.833 67.436
+qsort time: 147.472 ms
+std::sort time: 119.902 ms
+Parallel sort time (2 threads): 70.5863 ms
+DATAPOINT: 500000 2 147.472 119.902 70.5863
 Vector size: 500000, Parallel sort threads: 4
-qsort time: 146.867 ms
-std::sort time: 119.245 ms
-Parallel sort time (4 threads): 43.1598 ms
-DATAPOINT: 500000 4 146.867 119.245 43.1598
+qsort time: 151.646 ms
+std::sort time: 121.578 ms
+Parallel sort time (4 threads): 42.6525 ms
+DATAPOINT: 500000 4 151.646 121.578 42.6525
 Vector size: 500000, Parallel sort threads: 12
-qsort time: 148.155 ms
-std::sort time: 119.203 ms
-Parallel sort time (12 threads): 45.8706 ms
-DATAPOINT: 500000 12 148.155 119.203 45.8706
+qsort time: 149.445 ms
+std::sort time: 128.343 ms
+Parallel sort time (12 threads): 46.4503 ms
+DATAPOINT: 500000 12 149.445 128.343 46.4503
 Vector size: 1000000, Parallel sort threads: 1
-qsort time: 318.23 ms
-std::sort time: 249.881 ms
-Parallel sort time (1 threads): 252.244 ms
-DATAPOINT: 1000000 1 318.23 249.881 252.244
+qsort time: 315.112 ms
+std::sort time: 253.177 ms
+Parallel sort time (1 threads): 255.222 ms
+DATAPOINT: 1000000 1 315.112 253.177 255.222
 Vector size: 1000000, Parallel sort threads: 2
-qsort time: 317.72 ms
-std::sort time: 255.115 ms
-Parallel sort time (2 threads): 133.746 ms
-DATAPOINT: 1000000 2 317.72 255.115 133.746
+qsort time: 322.606 ms
+std::sort time: 250.964 ms
+Parallel sort time (2 threads): 139.144 ms
+DATAPOINT: 1000000 2 322.606 250.964 139.144
 Vector size: 1000000, Parallel sort threads: 4
-qsort time: 328.925 ms
-std::sort time: 260.673 ms
-Parallel sort time (4 threads): 103.726 ms
-DATAPOINT: 1000000 4 328.925 260.673 103.726
+qsort time: 312.114 ms
+std::sort time: 250.466 ms
+Parallel sort time (4 threads): 87.0683 ms
+DATAPOINT: 1000000 4 312.114 250.466 87.0683
 Vector size: 1000000, Parallel sort threads: 12
-qsort time: 321.331 ms
-std::sort time: 249.941 ms
-Parallel sort time (12 threads): 95.4538 ms
-DATAPOINT: 1000000 12 321.331 249.941 95.4538
+qsort time: 312.025 ms
+std::sort time: 254.439 ms
+Parallel sort time (12 threads): 82.8998 ms
+DATAPOINT: 1000000 12 312.025 254.439 82.8998

@@ -1,5 +1,5 @@
-Pipe-like Benchmark (Threads):
+Pipe-like Benchmark (Threads - Writer Loop Time):
   Messages: 10000, Size: 4096 B
-  Total time: 73258 us (0.073258 s)
-  Throughput: 533.218 MB/s
-  Avg latency/msg: 7.3258 us
+  Writer loop time: 68944.4 us (0.0689444 s)
+  Approx Throughput (based on writer time): 566.58 MB/s
+  Avg Latency/msg (based on writer time): 6.89444 us

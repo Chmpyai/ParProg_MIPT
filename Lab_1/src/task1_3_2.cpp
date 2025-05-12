@@ -15,16 +15,17 @@ constexpr double tau = 0.005; // шаг по времени
 constexpr double T = 1.0;  // конечное время
 constexpr double L = 1.0;  // длина области
 
-// Начальное условие
+// НУ
 double u0(double x) {
     return std::exp(-100 * (x - 0.5) * (x - 0.5));
 }
 
+// MAIN
 int main(int argc, char* argv[]) {
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
 #endif
-
+    // MPI
     MPI_Init(&argc, &argv);
 
     int rank, size;
@@ -32,6 +33,7 @@ int main(int argc, char* argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
     // Новые параметры сетки
+    // Используем h_ и tau_, чтобы не менять исходные constexpr
     double h_ = h;
     double tau_ = tau;
     if (argc > 2) {
@@ -39,7 +41,7 @@ int main(int argc, char* argv[]) {
         tau_ = T / (std::stoi(argv[2]) - 1);
     }
 
-    // Расчет параметров сетки
+    // Параметры сетки
     const int N = static_cast<int>(L / h_) + 1;  // количество точек по пространству
     const int M = static_cast<int>(T / tau_) + 1; // количество точек по времени
 
@@ -55,7 +57,7 @@ int main(int argc, char* argv[]) {
         u[0][i + 1] = u0((start_i + i) * h_);
     }
 
-    // Начало измерения времени
+    // Start time
     auto start = std::chrono::high_resolution_clock::now();
 
     // Решение уравнения переноса
@@ -82,13 +84,13 @@ int main(int argc, char* argv[]) {
             u[n + 1][i] = u[n][i] - a * tau_ / h_ * (u[n][i] - u[n][i - 1]);
         }
 
-        // Граничное условие на правом конце
+        // ГУ на правом конце
         if (rank == size - 1) {
             u[n + 1][local_N + 1] = u[n + 1][local_N];
         }
     }
 
-    // Конец измерения времени
+    // Finish time
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
